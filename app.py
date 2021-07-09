@@ -48,7 +48,7 @@ def predict():
         return render_template('home.html', prediction = news_prediction)
 
 import logging
-
+import sys
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 
