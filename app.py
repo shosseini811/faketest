@@ -11,6 +11,7 @@ from sklearn import preprocessing
 from sklearn import metrics
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+nltk.download('stopwords')
 
 # load dataset into dataframe object 
 #df_true = pd.read_csv("https://final-project-data-rjj.s3.us-east-2.amazonaws.com/True.csv")
