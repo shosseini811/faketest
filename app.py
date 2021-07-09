@@ -46,7 +46,12 @@ def predict():
         news_prediction = model.predict(input_output)   
  
         return render_template('home.html', prediction = news_prediction)
-    
+
+import logging
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
+
 # the if __name == '__main__' statement ensure that the run function will only run the application 
 # on the server when the script is directly executed by Python interpreter
 if __name__ == '__main__':
